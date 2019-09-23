@@ -7,5 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: [ './home.component.css' ]
 })
 export class HomeComponent{
-  
+  landingParameter : any;
+
+  itemClick(params){
+    this.landingParameter = params; 
+
+  }
 }

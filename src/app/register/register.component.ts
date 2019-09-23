@@ -40,7 +40,7 @@ export class RegisterComponent implements OnInit  {
         }
 
         this.loading = true;
-        this.router.navigate(['/home']);
+        this.router.navigate(['/landing']);
         
     }
 
