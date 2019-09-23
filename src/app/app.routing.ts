@@ -5,12 +5,16 @@ import { HelloComponent } from './hello.component';
 
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { LandingComponent } from './landing/landing.component';
+import { DonateComponent } from './donate/donate.component';
  
 const routes: Routes = [
     { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: 'home', component: HelloComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent }
+    { path: 'register', component: RegisterComponent },
+    { path: 'donate', component: DonateComponent },
+    { path: 'landing', component: LandingComponent }
 ];
  
 @NgModule({
