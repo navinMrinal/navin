@@ -49,7 +49,13 @@ export class LoginComponent implements OnInit  {
         }
 
         this.loading = true;
-        this.router.navigate(['/landing']);
+        if(this.show === 'donate'){
+          this.router.navigate(['/landing/donate']);
+        }
+        else if (this.show === 'request'){
+          this.router.navigate(['/landing/request']);
+        }
+        
         
     }
 }

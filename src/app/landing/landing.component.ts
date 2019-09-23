@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router ,ActivatedRoute } from '@angular/router';
 
 
 
@@ -12,10 +12,11 @@ import { Router } from '@angular/router';
 
 export class LandingComponent implements OnInit {
  
-  show:any;
-  constructor() {}
+  show:string;
+  constructor(private route: ActivatedRoute,
+        private router: Router) {}
 ngOnInit(){
-  const id = this.route.snapshot.paramMap.get('id');
+  this.show = this.route.snapshot.paramMap.get('id');
   
 }
 
