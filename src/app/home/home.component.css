@@ -29,3 +29,11 @@
   height: 37vw;
   background-image: url("https://mypustak-5.s3.ap-south-1.amazonaws.com/uploads/icons/imgchild.8d03e962.jpg");
 }
+.ourvision {
+    color: #00baf2;
+    position: absolute;
+    font-size: 2.5vw;
+    margin-left: 45%;
+    margin-top: -25%;
+    font-weight: bold;
+}
