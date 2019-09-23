@@ -44,7 +44,7 @@
 .has-text-centered {
     text-align: center !important;
 }
-.givmed-help-button-div[data-v-327b7d15] {
+.givmed-help-button-div {
     cursor: pointer;
     background-color: #12c6c8;
     font-size: 1.7rem;
@@ -53,7 +53,7 @@
     padding-bottom: 8vh;
     border-radius: 7px;
 }
-.givmed-help-button[data-v-327b7d15] {
+.givmed-help-button {
     background-color: #333392;
     color: white;
     border: none;
@@ -63,4 +63,13 @@
     padding-left: 30px;
     padding-right: 30px;
     margin-top: -28px;
+}
+.button{
+  cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+}
+.has-text-centered {
+    text-align: center !important;
 }
