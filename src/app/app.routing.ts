@@ -6,11 +6,13 @@ import { HelloComponent } from './hello.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { LandingComponent } from './landing/landing.component';
+import { HomeComponent } from './home/home.component';
 import { DonateComponent } from './donate/donate.component';
+
  
 const routes: Routes = [
     { path: '', redirectTo: '/login', pathMatch: 'full' },
-    { path: 'home', component: HelloComponent },
+    { path: 'home', component: HomeComponent },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'donate', component: DonateComponent },
