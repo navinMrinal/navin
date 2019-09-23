@@ -8,9 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent{
   landingParameter : any;
+  
 
-  itemClick(params){
-    this.landingParameter = params; 
 
   }
-}

@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit  {
     loading = false;
     submitted = false;
     returnUrl: string;
+    show: string;
 
    constructor(
         private formBuilder: FormBuilder,
@@ -29,6 +30,8 @@ export class LoginComponent implements OnInit  {
             username: ['', Validators.required],
             password: ['', Validators.required]
         });
+         this.show = this.route.snapshot.paramMap.get('id');
+        
 
         // get return url from route parameters or default to '/'
         this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
