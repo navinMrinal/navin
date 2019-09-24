@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router,ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 
@@ -14,9 +14,11 @@ export class RegisterComponent implements OnInit  {
   registerForm: FormGroup;
     loading = false;
     submitted = false;
+    show: string;
 
     constructor(
         private formBuilder: FormBuilder,
+         private route: ActivatedRoute,
         private router: Router
        
         
@@ -30,17 +32,18 @@ export class RegisterComponent implements OnInit  {
             username: ['', Validators.required],
             password: ['', [Validators.required, Validators.minLength(6)]]
         });
+        this.show = this.route.snapshot.paramMap.get('id');
     }
     onSubmit() {
         this.submitted = true;
 
         // stop here if form is invalid
-        if (this.registerForm.invalid) {
-            return;
-        }
+        // if (this.registerForm.invalid) {
+        //     return;
+        // }
 
         this.loading = true;
-        this.router.navigate(['/landing/new']);
+        this.router.navigate(['landing', this.show]);;
         
     }
 

@@ -15,7 +15,7 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'login', component: LoginComponent },
     { path: 'login/:id', component: LoginComponent },
-    { path: 'register', component: RegisterComponent },
+    { path: 'register/:id', component: RegisterComponent },
     { path: 'donate', component: DonateComponent },
     { path: 'landing/:id', component: LandingComponent },
     { path: 'landing', component: LandingComponent }
