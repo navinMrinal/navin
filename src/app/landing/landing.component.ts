@@ -38,6 +38,7 @@ ngOnInit(){
             lastName: ['', Validators.required],
             username: ['', Validators.required],
             password: ['', [Validators.required, Validators.minLength(6)]],
+            expiry: ['', Validators.required],
              pic: ['', Validators.required],
         }); 
 
