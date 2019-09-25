@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { LandingComponent } from './landing/landing.component';
 import { HomeComponent } from './home/home.component';
 import { DonateComponent } from './donate/donate.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
  
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
     { path: 'register/:id', component: RegisterComponent },
     { path: 'donate', component: DonateComponent },
     { path: 'landing/:id', component: LandingComponent },
+     { path: 'confirmation', component: ConfirmationComponent },
     { path: 'landing', component: LandingComponent }
 ];
  

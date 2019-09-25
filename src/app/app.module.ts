@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { LandingComponent } from './landing/landing.component';
 import { DonateComponent } from './donate/donate.component';
 import { HomeComponent } from './home/home.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
+
 import {AppRoutingModule} from './app.routing';
 
 
@@ -17,7 +19,8 @@ import {AppRoutingModule} from './app.routing';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,ReactiveFormsModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent ,LoginComponent,RegisterComponent,LandingComponent,DonateComponent,HomeComponent],
-  bootstrap:    [ AppComponent, LoginComponent,RegisterComponent,LandingComponent,DonateComponent,HomeComponent]
+  declarations: [ AppComponent, HelloComponent ,LoginComponent,RegisterComponent,LandingComponent,DonateComponent,HomeComponent,ConfirmationComponent],
+  
+  bootstrap:    [ AppComponent, LoginComponent,RegisterComponent,LandingComponent,DonateComponent,HomeComponent,ConfirmationComponent]
 })
 export class AppModule { }
