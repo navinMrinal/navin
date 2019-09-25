@@ -38,12 +38,12 @@ ngOnInit(){
             lastName: ['', Validators.required],
             username: ['', Validators.required],
             password: ['', [Validators.required, Validators.minLength(6)]],
-             medicine: ['', Validators.required],
+             pic: ['', Validators.required],
         }); 
 
 }
 onSubmit(){
-  this.router.navigate(['/login/request']);
+  this.router.navigate(['/confirmation']);
 }
 
 }
