@@ -159,3 +159,11 @@ columns.is-multiline {
     margin: 5px 0 0;
     font-size: 16px;
 }
+.danger {
+  background-color: #ffdddd;
+  border-left: 6px solid #f44336;
+}
+.success {
+  background-color: #ddffdd;
+  border-left: 6px solid #4CAF50;
+}
