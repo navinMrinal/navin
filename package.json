@@ -15,7 +15,7 @@
     "bootstrap.min.js": "3.3.5",
     "bootstrap4": "0.0.1-security",
     "core-js": "2.6.9",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "ngx-bootstrap": "5.2.0",
     "popper.js": "1.15.0",
     "rxjs": "6.5.2",
